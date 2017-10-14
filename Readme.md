@@ -9,18 +9,23 @@ The long term plan for this project to shine and die, once it is widely used and
 ### FAQ:
 
 **Q**:  How is this different then <insert random package manager\>?
+
 **A**:  Strictly this is not a package manager, this is a wrapper for other package managers. The aim is to give instructions/ manuals not to store packages, just metadata, but for every platform
 
 **Q**: Why do we even need this ? 
+
 **A**: You might not need it, but why I think it will work is, because I seen that a lot of installation need hand-holding, and I think **glid** can offer that
 
 **Q**: How do I contribute ?
+
 **A**: Plenty of ways, see it [here](/contribute.md)
 
 **Q**: Why **glid**?
-**A**: The original idea was to make a **G**eneric **L**inux **I**installer **D**atabase, and BSD / OSX just come after, and I really want the installs to be "moving smoothly and easily" 
+
+**A**: The original idea was to make a **G**eneric **L**inux **I**nstaller **D**atabase, and BSD / OSX just come after, and I really want the installs to be "moving smoothly and easily" 
 
 **Q**: What to expect how is this going to look like
+
 **A**: First stage cli only, GUI is not in the scope right now
 
 ### The evil plan to take over the word:
