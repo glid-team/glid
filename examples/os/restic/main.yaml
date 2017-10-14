@@ -1,0 +1,18 @@
+standard_version: 0.1
+META:
+  project_name: restic
+  license: BSD-2-Clause
+  project_site: https://restic.github.io
+  maintainer: https://github.com/orgs/restic/people
+  category: os
+  version: 0.7.1
+  langwich: go
+  short_desc:
+	Fast, secure, efficient backup program
+AVABILITY:
+  linux:
+    *: precompled
+  bsd:
+    *: precompled
+  mac:
+    *: precompled

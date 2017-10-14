@@ -1,0 +1,23 @@
+standard_version: 0.1
+META:
+  project_name: viber
+  license: NA
+  project_site: http://viber.com
+  maintainer: support@viber.com
+  category: os_package
+  version: 6.5.5.1481
+  langwich: NA
+  short_desc:
+	Closed source IM own by Viber Media S.à r.l.
+AVABILITY:
+  linux:
+    debian: prepackaged
+    ubuntu: prepackaged
+    fedora: prepackaged
+  bsd:
+    freebds: false
+    openbsd: false
+  mac:
+    *: true
+  android: true
+

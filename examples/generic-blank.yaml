@@ -1,0 +1,34 @@
+standard_version: 0.1
+META:
+  project_name: STRING
+  license: OPTIONS
+  project_site: STRING
+  maintainer: STRING
+  category: OPTIONS
+  version: STRING
+  langwich: OPTIONS
+  short_desc:
+	TEXT
+AVABILITY:
+  linux:
+    debian: OPTIONS
+    ubuntu: OPTIONS
+    fedora: OPTIONS
+  bsd:
+    freebds: OPTIONS
+    openbsd: OPTIONS
+  mac:
+    *: OPTIONS
+
+SRC:
+  URL: STRING
+CONTROL_HASH:
+  MD5: STRING
+  SHA1: STRING
+DEPENDENCIES:
+  OS: ARRAY
+INSTALL:
+  PRE: STRING
+  MAIN: STRING
+  POST: STRING
+

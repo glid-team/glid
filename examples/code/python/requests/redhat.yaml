@@ -1,0 +1,6 @@
+INSTALL:
+  PRE:
+   - yum install epel-release
+   - yum install -y python-pip
+
+

@@ -1,0 +1,6 @@
+DEPENDENCIES:
+  OS:
+    - python-pip
+
+INSTALL:
+  PRE: apt-get install $DEPENDENCY[OS]

@@ -1,0 +1,34 @@
+standard_version: 0.1
+META:
+  project_name: reqests
+  license: Apache 2.0
+  project_site: http://www.python-requests.org
+  category: pip_package
+  version: 
+  langwich: python
+  short_desc:
+	Python HTTP Requests for Humans
+AVABILITY:
+  linux:
+    debian: prepackaged
+    ubuntu: prepackaged
+    fedora: prepackaged
+  bsd:
+    freebds: true
+    openbsd: true
+  mac:
+    *: true
+  android: false
+
+DEPENDENCIES:
+  OS:
+    - python-pip
+  PYTHON:
+    - chardet
+    - idna
+    - urllib3
+    - certifi
+
+INSTALL:
+  MAIN: pip install requests
+
