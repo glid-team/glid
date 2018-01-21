@@ -1,3 +1,4 @@
+---
 standard_version: 0.1
 META:
   project_name: viber
@@ -8,7 +9,7 @@ META:
   version: 6.5.5.1481
   langwich: NA
   short_desc:
-	Closed source IM own by Viber Media S.à r.l.
+    Closed source IM own by Viber Media S.à r.l.
 AVABILITY:
   linux:
     debian: prepackaged
@@ -18,6 +19,5 @@ AVABILITY:
     freebds: false
     openbsd: false
   mac:
-    *: true
+    all: true
   android: true
-

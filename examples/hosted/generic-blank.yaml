@@ -1,3 +1,4 @@
+---
 standard_version: 0.1
 META:
   project_name: STRING
@@ -8,7 +9,7 @@ META:
   version: STRING
   langwich: OPTIONS
   short_desc:
-	TEXT
+    TEXT
 AVABILITY:
   linux:
     debian: OPTIONS
@@ -18,8 +19,7 @@ AVABILITY:
     freebds: OPTIONS
     openbsd: OPTIONS
   mac:
-    *: OPTIONS
-
+    all: OPTIONS
 SRC:
   URL: STRING
 CONTROL_HASH:
@@ -31,4 +31,3 @@ INSTALL:
   PRE: STRING
   MAIN: STRING
   POST: STRING
-

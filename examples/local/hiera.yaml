@@ -1,0 +1,11 @@
+---
+:hierarchy:
+ - code/*/%{package}/%{os_family}
+ - code/*/%{package}/main
+ - os/%{package}/%{architecture}
+ - os/%{package}/%{os_family}
+ - os/%{package}/main
+:backends:
+ - yaml
+:yaml:
+ :datadir: '/home/kisst/git/glid/examples/hosted'

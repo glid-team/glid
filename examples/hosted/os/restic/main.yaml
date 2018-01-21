@@ -1,3 +1,4 @@
+---
 standard_version: 0.1
 META:
   project_name: restic
@@ -8,11 +9,11 @@ META:
   version: 0.7.1
   langwich: go
   short_desc:
-	Fast, secure, efficient backup program
+    Fast, secure, efficient backup program
 AVABILITY:
   linux:
-    *: precompled
+    all: precompled
   bsd:
-    *: precompled
+    all: precompled
   mac:
-    *: precompled
+    all: precompled
