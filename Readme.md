@@ -1,55 +1,63 @@
-### ABOUT THIS PROJECT:
 
-As a distro hopper, as sysadmin, as developer, one recurring problem was the wide packing standard, as the yearly [linux sucks](https://github.com/BryanLunduke/LinuxSucks) talks pointed out every year, packaging needs some love from the community.
+> As a distro hopper/sysadmin/developer, one recurring problem has always been *plethora of packaging standards* used to set up an environment. As the yearly [Linux sucks](https://github.com/BryanLunduke/LinuxSucks) talks make light of - packaging needs some love from the community.
 
-At this stage to think that suddenly RedHat and Debian and Arch developers will sit down at one table and agree that they will use one and only packaging standard is is naive to think, so as always I suggest a [new standard](https://xkcd.com/927/) 
+## About this project
 
-The long term plan for this project to shine and die, once it is widely used and a big enough mass is behind the idea, the hopefully will not be needed, but till then let's shine.
+The aim of `glid` is to simplify installing Linux packages. Unfortunately at this stage it seems too optimistic to believe that Red Hat, Debian and Arch developers will be able to come together and agree on a single standard, and so in it's place we suggest a [new standard](https://xkcd.com/927/).
 
-### FAQ:
+## FAQs
+**Q**:  How is this different than <insert random package manager\>?
 
-**Q**:  How is this different then <insert random package manager\>?
+**A**:  Strictly `glid` is not a package manager, but simply a wrapper for other package managers, driven by a repository of metadata for a wide range of Linux packages (sort of like [@types](https://github.com/DefinitelyTyped/DefinitelyTyped) for TypeScript). Each entry in the repository will contain the required information to install the package on any Linux distribution.
 
-**A**:  Strictly this is not a package manager, this is a wrapper for other package managers. The aim is to give instructions/ manuals not to store packages, just metadata, but for every platform
+-----
 
-**Q**: Why do we even need this ? 
+**Q**: Why do we even need this?
 
-**A**: You might not need it, but why I think it will work is, because I seen that a lot of installation need hand-holding, and I think **glid** can offer that
+**A**: The aim of `glid` is to save you time. Why google how to install package `x` on distribution `y` when the same problem has been solved many hundreds of times before.
 
-**Q**: How do I contribute ?
+-----
+
+**Q**: OK I get it - how can I contribute ?
 
 **A**: Plenty of ways, see it [here](/contribute.md)
 
-**Q**: Why **glid**?
+----
 
-**A**: The original idea was to make a **G**eneric **L**inux **I**nstaller **D**atabase, and BSD / OSX just come after, and I really want the installs to be "moving smoothly and easily" 
+**Q**: Why `glid`?
 
-**Q**: What to expect how is this going to look like
+**A**: This tool aims to provide a **G**eneric **L**inux **I**nstaller **D**atabase (with BSD and OSX coming after)
 
-**A**: First stage cli only, GUI is not in the scope right now
+----
 
-### The evil plan to take over the word:
+**Q**: How does `glid` work?
 
- - acknowledge the problem exist
- - reach out all potential decision maker
- - collect list of tools which we aim to replace / overcome
- - clarify the scope how far we can/have to go
- - apply pressure with mass crowd to start the conversation
- - setup the agenda about the negotiation
- - create conversion plan, make sure there is commitment
- - write hands on tutorial, the best documentation possible
-
-### Goals:
-
- - create a standard distro/lang independent package manager
- - free up dev time, less time spent on packaging
- - bigger penetration for new project by easy install option
+**A**: Initially as a CLI only. A GUI is currently out of scope
 
 
-### Tools:
+## The Roadmap (or, *how to conquer the world*)
 
- - distro
-	- rpm ( yum ) 
+ - Acknowledge the problem exists
+ - Reach out all potential decision makers
+ - Collate a list of tools which we aim to replace/overcome
+ - Clarify the scope of the project (Distros & Packages)
+ - Through public adoption, begin to apply pressure on distro providers to take ownership of the problem
+ - Manage the discussion. Bring actors to the table and ensure there is real commitment
+ - Develop outstanding documentation and help resources
+
+## Intended Goals
+
+ - Create a standard distro/language independent package manager
+ - Free up developer time spent on package management
+ - Bigger penetration for new project by easy install option
+
+
+## Tools
+
+Here's a rough light of the all the things which `glid` aims to unify:
+
+ - Distros
+	- rpm ( yum )
 	- deb ( dpkg, apt, aptitude )
 	- snap
 	- pkg
@@ -59,7 +67,7 @@ The long term plan for this project to shine and die, once it is widely used and
 	- flatpack
 	- appimage
 
- - language
+ - Languages
 	- php
 		- pear
 		- composer
@@ -84,16 +92,20 @@ The long term plan for this project to shine and die, once it is widely used and
 	- firefox
 	- grafana
 
-This is what **glid** need to know:
+------
 
- - architecture aware
- - OS aware ( Mac / BSD / any flavour of Linux )
- - handle dependencies
- - pin versions
- - have extensive QA for package publish
- - must not try to host bin just instruction
- - per and after install "manual" commands
- - channel aware ( latest, stable, testing, etc )
- - written in widely know code ( go / python )
- - highly modular
- - Updates and clear uninstalls
+In order to do this, `glid` needs to be:
+
+ - Architecture aware
+ - OS aware (Mac / BSD / any flavour of Linux)
+ - Able to handle dependencies
+ - Able to pin versions
+ - Have extensive QA for packages published
+ - Channel aware (latest, stable, testing, etc)
+ - Written in a clear and widely used language (e.g. go/python)
+ - Highly modular
+ - Able to clearly support both *updates* and *uninstalls*
+ - Able to handle lifecycle hooks (e.g. "post install")
+
+It should *not* be:
+ - A host of binaries, simply instructions
